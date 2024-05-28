@@ -7,6 +7,10 @@ const ScreensArray = [
     name: 'Dropdown Menu',
     Route: 'DropdownMenu',
   },
+  {
+    name: 'Duolingo Drag and Drop',
+    Route: 'DuolingoDragDrop',
+  },
 ];
 
 const index = () => {
