@@ -11,6 +11,10 @@ const ScreensArray = [
     name: 'Duolingo Drag and Drop',
     Route: 'DuolingoDragDrop',
   },
+  {
+    name: 'Vertical Menu Bar',
+    Route: 'VerticalMenuBar',
+  },
 ];
 
 const index = () => {
