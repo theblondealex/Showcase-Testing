@@ -11,6 +11,18 @@ const ScreensArray = [
     name: 'Vertical Menu Bar',
     Route: 'VerticalMenuBar',
   },
+  {
+    name: 'Swipeable Tarot Cards',
+    Route: 'SwipeableTarotCards',
+  },
+  {
+    name: 'Ripple Effect',
+    Route: 'RippleEffect',
+  },
+  {
+    name: 'Password Dial Telephone',
+    Route: 'PasswordDialTelephone',
+  },
 ];
 
 const index = () => {

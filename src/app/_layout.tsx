@@ -26,6 +26,27 @@ export default function Layout() {
             headerShown: false,
           }}
         />
+        <Drawer.Screen
+          name="SwipeableTarotCards"
+          options={{
+            title: 'Swipeable Tarot Cards',
+            headerShown: false,
+          }}
+        />
+        {/* <Drawer.Screen
+          name="RippleEffect"
+          options={{
+            title: 'Ripple Effect',
+            headerShown: false,
+          }}
+        />
+        <Drawer.Screen
+          name="PasswordDialTelephone"
+          options={{
+            title: 'Password Dial Telephone',
+            headerShown: false,
+          }}
+        /> */}
       </Drawer>
     </GestureHandlerRootView>
   );
