@@ -78,9 +78,9 @@ export const Card = ({ card: { source }, index, shuffleBack }: CardProps) => {
       y.value = event.translationY + context.value.y;
     })
     .onEnd((event) => {
-      const dest = snapPoint(x.value, y.value, SNAP_POINTS);
-      x.value = withSpring(dest, { velocity: event.velocityX });
-      y.value = withSpring(0, { velocity: event.velocityY });
+      const dest = snapPoint(x.value, event.velocityX, SNAP_POINTS);
+      x.value = withSpring(dest, { velocity: 1.5 * event.velocityX });
+      y.value = withSpring(0, { velocity: 1.5 * event.velocityY });
       scale.value = withTiming(1, { duration: DURATION }, () => {
         if (index === 0 && dest !== 0) {
           shuffleBack.value = true;
