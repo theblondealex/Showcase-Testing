@@ -1,6 +1,7 @@
 import { View, StyleSheet } from 'react-native';
 
 import { Card } from '@/components/SwipeableTarotCard/Card';
+import { useSharedValue } from 'react-native-reanimated';
 
 const cards = [
   {
@@ -32,11 +33,13 @@ const cards = [
 const assets = cards.map((card) => card.source);
 
 const SwipeableTarotCards = () => {
+  const shuffleBack = useSharedValue<boolean>(false);
+
   return (
     <View style={styles.container}>
       {cards.map((card, index) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-        <Card card={card} key={index} index={index} />
+        <Card card={card} key={index} index={index} shuffleBack={shuffleBack} />
       ))}
     </View>
   );
