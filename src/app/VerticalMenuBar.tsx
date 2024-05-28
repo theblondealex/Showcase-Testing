@@ -15,7 +15,7 @@ const VerticalMenuBar = () => {
   const scrollOffset = useSharedValue(0);
 
   const dragGesture = Gesture.Pan()
-    .activateAfterLongPress(200)
+    .activateAfterLongPress(100)
     .onStart((e) => {
       activeY.value = e.y;
     })
@@ -31,41 +31,33 @@ const VerticalMenuBar = () => {
   });
 
   return (
-    <>
-      <Drawer.Screen
-        options={{
-          title: 'Vertical Menu Bar',
-          headerShown: false,
-        }}
-      />
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <SafeAreaView style={styles.container}>
-          <View>
-            <View style={styles.toolbarView} />
-            <GestureDetector gesture={dragGesture}>
-              <Animated.FlatList
-                style={styles.buttonListView}
-                contentContainerStyle={{ padding: 8 }}
-                onScroll={scrollHandler}
-                scrollEventThrottle={16}
-                showsVerticalScrollIndicator={false}
-                data={BUTTONS_LIST}
-                keyExtractor={(item, index) => `${item.title}-${index}`}
-                renderItem={({ item, index }) => (
-                  <MenuItemButton
-                    item={item}
-                    offset={scrollOffset}
-                    activeY={activeY}
-                    index={index}
-                    key={`${item.title}-${index}`}
-                  />
-                )}
-              />
-            </GestureDetector>
-          </View>
-        </SafeAreaView>
-      </GestureHandlerRootView>
-    </>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaView style={styles.container}>
+        <View>
+          <View style={styles.toolbarView} />
+          <GestureDetector gesture={dragGesture}>
+            <Animated.FlatList
+              style={styles.buttonListView}
+              contentContainerStyle={{ padding: 8 }}
+              onScroll={scrollHandler}
+              scrollEventThrottle={16}
+              showsVerticalScrollIndicator={false}
+              data={BUTTONS_LIST}
+              keyExtractor={(item, index) => `${item.title}-${index}`}
+              renderItem={({ item, index }) => (
+                <MenuItemButton
+                  item={item}
+                  offset={scrollOffset}
+                  activeY={activeY}
+                  index={index}
+                  key={`${item.title}-${index}`}
+                />
+              )}
+            />
+          </GestureDetector>
+        </View>
+      </SafeAreaView>
+    </GestureHandlerRootView>
   );
 };
 

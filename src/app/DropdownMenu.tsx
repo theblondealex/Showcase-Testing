@@ -24,12 +24,6 @@ const header = {
 const DropdownMenu = () => {
   return (
     <>
-      <Drawer.Screen
-        options={{
-          title: 'Dropdown Menu',
-          headerShown: false,
-        }}
-      />
       <View style={styles.container}>
         <StatusBar style="light" />
         <DropDown header={header} options={options} />

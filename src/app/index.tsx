@@ -8,10 +8,6 @@ const ScreensArray = [
     Route: 'DropdownMenu',
   },
   {
-    name: 'Duolingo Drag and Drop',
-    Route: 'DuolingoDragDrop',
-  },
-  {
     name: 'Vertical Menu Bar',
     Route: 'VerticalMenuBar',
   },
@@ -19,26 +15,18 @@ const ScreensArray = [
 
 const index = () => {
   return (
-    <>
-      <Drawer.Screen
-        options={{
-          title: 'Home',
-          headerShown: false,
-        }}
-      />
-      <View style={styles.container}>
-        {ScreensArray.map((item) => (
-          <TouchableOpacity
-            key={item.name}
-            style={styles.item}
-            onPress={() => {
-              router.push(item.Route);
-            }}>
-            <Text style={styles.itemText}>{item.name}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
-    </>
+    <View style={styles.container}>
+      {ScreensArray.map((item) => (
+        <TouchableOpacity
+          key={item.name}
+          style={styles.item}
+          onPress={() => {
+            router.push(item.Route);
+          }}>
+          <Text style={styles.itemText}>{item.name}</Text>
+        </TouchableOpacity>
+      ))}
+    </View>
   );
 };
 
@@ -50,11 +38,10 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: '#605c5c',
     padding: 26,
-    gap: 14,
+    gap: 12,
   },
   item: {
-    marginVertical: 8,
-    padding: 12,
+    padding: 18,
     width: '100%',
     borderBottomWidth: 1,
     borderColor: '#ccc',
