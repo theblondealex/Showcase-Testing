@@ -52,7 +52,20 @@ export default function Layout() {
             headerShown: false,
           }}
         />
-        <Drawer.Screen name="NumberShake" options={{ title: 'Number Shake', headerShown: false }} />
+        <Drawer.Screen
+          name="NumberShake"
+          options={{
+            title: 'Number Shake',
+            headerShown: false,
+          }}
+        />
+        <Drawer.Screen
+          name="ColourPicker"
+          options={{
+            title: 'Colour Picker',
+            headerShown: false,
+          }}
+        />
 
         {/* <Drawer.Screen
           name="PasswordDialTelephone"

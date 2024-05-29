@@ -31,12 +31,9 @@ const NumberShake = () => {
 
   const rErrorStyle = useAnimatedStyle(() => {
     return {
-      color: withTiming(
-        isShaking.value ? (count === 0 ? 'red' : count === 10 ? 'green' : 'black') : 'black',
-        {
-          duration: 250,
-        }
-      ),
+      color: withTiming(isShaking.value ? 'red' : 'black', {
+        duration: 250,
+      }),
     };
   }, [isShaking]);
 

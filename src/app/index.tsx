@@ -24,9 +24,13 @@ const ScreensArray = [
     Route: 'NumberShake',
   },
   {
-    name: 'Password Dial Telephone',
-    Route: 'PasswordDialTelephone',
+    name: 'Colour Picker',
+    Route: 'ColourPicker',
   },
+  // {
+  //   name: 'Password Dial Telephone',
+  //   Route: 'PasswordDialTelephone',
+  // },
 ];
 
 const index = () => {

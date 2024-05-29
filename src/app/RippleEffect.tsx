@@ -4,11 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const RippleEffect = () => {
   return (
     <View style={styles.container}>
-      <Ripple
-        onTap={() => {
-          console.log('tap');
-        }}
-        style={styles.ripple}>
+      <Ripple onTap={() => {}} style={styles.ripple}>
         <Text style={{ fontSize: 20 }}>Tap</Text>
       </Ripple>
     </View>
