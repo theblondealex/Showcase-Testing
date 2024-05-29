@@ -1,15 +1,15 @@
 import { Image } from 'expo-image';
 import React, { useEffect } from 'react';
-import { Dimensions, Easing, StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
-  type SharedValue,
+  useAnimatedReaction,
   useAnimatedStyle,
   useSharedValue,
   withDelay,
   withSpring,
   withTiming,
-  useAnimatedReaction,
+  type SharedValue,
 } from 'react-native-reanimated';
 import { snapPoint } from 'react-native-redash';
 
@@ -68,7 +68,7 @@ export const Card = ({ card: { source }, index, shuffleBack }: CardProps) => {
   }, [index, y, rotateZ, theta]);
 
   const cardGesture = Gesture.Pan()
-    .onStart((event) => {
+    .onStart(() => {
       context.value = { x: x.value, y: y.value };
       scale.value = withTiming(1.1);
       rotateZ.value = withTiming(0);

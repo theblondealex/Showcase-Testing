@@ -1,0 +1,2 @@
+Load assets prefecth regardless of page
+Slider to change size of the box

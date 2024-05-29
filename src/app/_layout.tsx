@@ -45,14 +45,16 @@ export default function Layout() {
             headerShown: false,
           }}
         />
-        {/* <Drawer.Screen
+        <Drawer.Screen
           name="RippleEffect"
           options={{
             title: 'Ripple Effect',
             headerShown: false,
           }}
         />
-        <Drawer.Screen
+        <Drawer.Screen name="NumberShake" options={{ title: 'Number Shake', headerShown: false }} />
+
+        {/* <Drawer.Screen
           name="PasswordDialTelephone"
           options={{
             title: 'Password Dial Telephone',

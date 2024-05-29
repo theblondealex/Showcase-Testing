@@ -20,6 +20,10 @@ const ScreensArray = [
     Route: 'RippleEffect',
   },
   {
+    name: 'Number Shake',
+    Route: 'NumberShake',
+  },
+  {
     name: 'Password Dial Telephone',
     Route: 'PasswordDialTelephone',
   },
