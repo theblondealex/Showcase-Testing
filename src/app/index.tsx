@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const ScreensArray = [
   {
@@ -28,6 +29,10 @@ const ScreensArray = [
     name: 'Colour Picker',
     Route: 'ColourPicker',
   },
+  {
+    name: 'Cards carousel',
+    Route: 'CardsCarousel',
+  },
   // {
   //   name: 'Password Dial Telephone',
   //   Route: 'PasswordDialTelephone',
@@ -46,7 +51,7 @@ const renderItem = ({ item }: { item: (typeof ScreensArray)[0] }) => (
 
 const index = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar hidden />
       <View style={styles.header}>
         <Text style={styles.headerText}>Showcase Testing</Text>
@@ -60,7 +65,7 @@ const index = () => {
         renderItem={renderItem}
         keyExtractor={(item) => item.name}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 

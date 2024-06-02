@@ -68,7 +68,13 @@ export default function Layout() {
             headerShown: false,
           }}
         />
-
+        <Drawer.Screen
+          name="CardsCarousel"
+          options={{
+            title: 'Cards Carousel',
+            headerShown: false,
+          }}
+        />
         {/* <Drawer.Screen
           name="PasswordDialTelephone"
           options={{
