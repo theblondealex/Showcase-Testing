@@ -1,13 +1,8 @@
 import { BUTTONS_LIST } from '@/Utils/VerticalMenuBar/Buttons';
 import MenuItemButton from '@/components/VerticalMenuBar/MenuItemButton';
-import { Drawer } from 'expo-router/drawer';
-import { StyleSheet, Text, View, FlatList, Easing } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
-import Animated, {
-  useAnimatedScrollHandler,
-  useSharedValue,
-  withTiming,
-} from 'react-native-reanimated';
+import Animated, { useAnimatedScrollHandler, useSharedValue } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const ITEM_HEIGHT = 50 + 16;
