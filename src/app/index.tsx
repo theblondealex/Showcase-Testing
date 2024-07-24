@@ -1,13 +1,7 @@
 import { router } from "expo-router";
 import { Drawer } from "expo-router/drawer";
 import { StatusBar } from "expo-status-bar";
-import {
-	View,
-	Text,
-	TouchableOpacity,
-	StyleSheet,
-	FlatList,
-} from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const ScreensArray = [
@@ -43,6 +37,10 @@ const ScreensArray = [
 		name: "Split Button",
 		Route: "SplitButtonPage",
 	},
+	{
+		name: "Brick Breaker",
+		Route: "BrickBreaker",
+	},
 ];
 
 const renderItem = ({ item }: { item: (typeof ScreensArray)[0] }) => (
@@ -50,8 +48,7 @@ const renderItem = ({ item }: { item: (typeof ScreensArray)[0] }) => (
 		style={styles.item}
 		onPress={() => {
 			router.push(item.Route);
-		}}
-	>
+		}}>
 		<Text style={styles.itemText}>{item.name}</Text>
 	</TouchableOpacity>
 );

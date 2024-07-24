@@ -22,17 +22,17 @@ export default function Layout() {
 
 	return (
 		<GestureHandlerRootView style={{ flex: 1 }}>
-			<StatusBar style="auto" />
+			<StatusBar style='auto' />
 			<Drawer>
 				<Drawer.Screen
-					name="index"
+					name='index'
 					options={{
 						title: "Home",
 						headerShown: false,
 					}}
 				/>
 				<Drawer.Screen
-					name="DropdownMenu"
+					name='DropdownMenu'
 					options={{
 						unmountOnBlur: true,
 						title: "Dropdown Menu",
@@ -40,7 +40,7 @@ export default function Layout() {
 					}}
 				/>
 				<Drawer.Screen
-					name="VerticalMenuBar"
+					name='VerticalMenuBar'
 					options={{
 						unmountOnBlur: true,
 
@@ -49,7 +49,7 @@ export default function Layout() {
 					}}
 				/>
 				<Drawer.Screen
-					name="SwipeableTarotCards"
+					name='SwipeableTarotCards'
 					options={{
 						unmountOnBlur: true,
 
@@ -58,37 +58,44 @@ export default function Layout() {
 					}}
 				/>
 				<Drawer.Screen
-					name="RippleEffect"
+					name='RippleEffect'
 					options={{
 						title: "Ripple Effect",
 						headerShown: false,
 					}}
 				/>
 				<Drawer.Screen
-					name="NumberShake"
+					name='NumberShake'
 					options={{
 						title: "Number Shake",
 						headerShown: false,
 					}}
 				/>
 				<Drawer.Screen
-					name="ColourPicker"
+					name='ColourPicker'
 					options={{
 						title: "Colour Picker",
 						headerShown: false,
 					}}
 				/>
 				<Drawer.Screen
-					name="CardsCarousel"
+					name='CardsCarousel'
 					options={{
 						title: "Cards Carousel",
 						headerShown: false,
 					}}
 				/>
 				<Drawer.Screen
-					name="SplitButtonPage"
+					name='SplitButtonPage'
 					options={{
 						title: "Split Button",
+						headerShown: false,
+					}}
+				/>
+				<Drawer.Screen
+					name='BrickBreaker'
+					options={{
+						title: "Brick Breaker",
 						headerShown: false,
 					}}
 				/>
