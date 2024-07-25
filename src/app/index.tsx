@@ -41,6 +41,10 @@ const ScreensArray = [
 		name: "Brick Breaker",
 		Route: "BrickBreaker",
 	},
+	{
+		name: "Check Box",
+		Route: "CheckBox",
+	},
 ];
 
 const renderItem = ({ item }: { item: (typeof ScreensArray)[0] }) => (

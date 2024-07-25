@@ -14,6 +14,7 @@ export default function Layout() {
 		(() => {
 			Font.loadAsync({
 				FiraCodeRegular: require("../assets/fonts/FiraCode-Regular.ttf"),
+				"SF-Pro-Rounded-Bold": require("../assets/fonts/SF-Pro-Rounded-Bold.otf"),
 			}).then(() => {
 				setFontsLoaded(true);
 			});
@@ -96,6 +97,13 @@ export default function Layout() {
 					name='BrickBreaker'
 					options={{
 						title: "Brick Breaker",
+						headerShown: false,
+					}}
+				/>
+				<Drawer.Screen
+					name='CheckBox'
+					options={{
+						title: "Check Box",
 						headerShown: false,
 					}}
 				/>

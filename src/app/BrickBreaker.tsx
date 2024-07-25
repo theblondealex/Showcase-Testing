@@ -14,7 +14,7 @@ import {
 	width,
 } from "@/constants/BrickBreakerConstants";
 import type { BrickInterface, CircleInterface, PaddleInterface } from "@/types/BrickBreakerTypes";
-import { animate, createBouncingExample } from "@/Utils/VerticalMenuBar/BrickBreaker/Logic";
+import { animate, createBouncingExample } from "@/Utils/BrickBreaker/Logic";
 import {
 	Canvas,
 	Circle,
