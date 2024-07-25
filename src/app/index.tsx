@@ -1,7 +1,6 @@
 import { router } from "expo-router";
-import { Drawer } from "expo-router/drawer";
 import { StatusBar } from "expo-status-bar";
-import { View, Text, TouchableOpacity, StyleSheet, FlatList } from "react-native";
+import { FlatList, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const ScreensArray = [

@@ -1,6 +1,5 @@
 import type { BrickInterface } from "@/types/BrickBreakerTypes";
 import { LinearGradient, RoundedRect, vec } from "@shopify/react-native-skia";
-import { StyleSheet, Text, View } from "react-native";
 import { useDerivedValue } from "react-native-reanimated";
 
 interface Prop {

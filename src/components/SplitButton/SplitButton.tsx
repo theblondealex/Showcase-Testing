@@ -1,5 +1,5 @@
 import { Palette } from "@/constants/SplitPalette";
-import { View, Text, StyleSheet, useWindowDimensions } from "react-native";
+import { View, StyleSheet, useWindowDimensions } from "react-native";
 import Animated, { useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { PressableScale } from "./PressableScale";
 

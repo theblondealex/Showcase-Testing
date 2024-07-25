@@ -2,6 +2,12 @@
 	"linter": {
 		"rules": {
 			"recommended": true,
+			"correctness": {
+				"noUnusedImports": {
+					"level": "error",
+					"fix": "safe"
+				}
+			},
 			"style": {
 				"useImportType": {
 					"level": "error",

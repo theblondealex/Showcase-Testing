@@ -27,16 +27,10 @@ import {
 	LinearGradient,
 	Text,
 } from "@shopify/react-native-skia";
-import { xyz } from "color";
-import React, { useEffect, useState } from "react";
-import { StyleSheet, View, TouchableOpacity, Platform } from "react-native";
+import { useState } from "react";
+import { StyleSheet, View, Platform } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
-import {
-	startMapper,
-	useDerivedValue,
-	useFrameCallback,
-	useSharedValue,
-} from "react-native-reanimated";
+import { useDerivedValue, useFrameCallback, useSharedValue } from "react-native-reanimated";
 
 const fontFamily = Platform.select({ ios: "Helvetica", default: "serif" });
 const fontStyle = {

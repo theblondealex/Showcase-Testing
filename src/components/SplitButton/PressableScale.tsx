@@ -1,4 +1,4 @@
-import { type StyleProp, View, type ViewStyle } from "react-native";
+import type { StyleProp, ViewStyle } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import Animated, {
 	runOnJS,
@@ -15,7 +15,6 @@ type PressableScaleProps = {
 
 export const PressableScale: React.FC<PressableScaleProps> = ({ ...PressableScaleProps }) => {
 	const scale = useSharedValue(1);
-
 	const gesture = Gesture.Tap()
 		.maxDuration(5000)
 		.onTouchesDown(() => {

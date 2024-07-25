@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
-import { Palette } from "@/constants/SplitPalette";
 import { SplitButton } from "@/components/SplitButton/SplitButton";
+import { Palette } from "@/constants/SplitPalette";
 import { useState } from "react";
+import { StyleSheet, View } from "react-native";
 const SplitButtonPage = () => {
 	const [splitted, setSplitted] = useState(false);
 

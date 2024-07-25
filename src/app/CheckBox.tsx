@@ -1,7 +1,5 @@
 import CheckBoxItem from "@/components/CheckBox/CheckBoxItem";
-import { Cuisines } from "@/constants/CheckBoxConstants";
 import useCuisines from "@/hooks/useCuisines";
-import { useCallback, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 const CheckBox = () => {
